@@ -14,7 +14,9 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-2">bouton aide</div>
+        <div class="col-2">
+          <button type="button">aide?</button>
+        </div>
         <div class="col-2 offset-8">bouton imprimer</div>
       </div>
     </div>
@@ -23,12 +25,24 @@
         <div class="col-1">
           <div class="dropdown">5H</div>
         </div>
-        <div class="col-1">5p</div>
-        <div class="col-2">Par groupe</div>
-        <div class="col-2">difficiles</div>
-        <div class="col-2">pronominaux</div>
-        <div class="col-2">CIF(FLE)</div>
-        <div class="col-2">exercer</div>
+        <div class="col-1">
+          <div class="dropdown">5P</div>
+        </div>
+        <div class="col-2">
+          <div class="dropdown">Par Groupe</div>
+        </div>
+        <div class="col-2">
+          <div class="dropdown">difficiles</div>
+        </div>
+        <div class="col-2">
+          <div class="dropdown">pronominaux</div>
+        </div>
+        <div class="col-2">
+          <div class="dropdown">CIF(FLE)</div>
+        </div>
+        <div class="col-2">
+          <div class="dropdown">Pronominaux</div>
+        </div>
       </div>
     </div>
     <div class="container">
@@ -41,10 +55,10 @@
               <hr />
               <div class="button-list">
                 <!--bouttons -->
-                <a class="tag">verbe</a>
-                <a class="tag">verbe</a>
-                <a class="tag">verbe</a>
-                <a class="tag">verbe</a>
+                <a class="tag">verbe</a> <br />
+                <a class="tag">verbe</a> <br />
+                <a class="tag">verbe</a> <br />
+                <a class="tag">verbe</a> <br />
               </div>
             </div>
           </div>
@@ -52,11 +66,11 @@
         <div class="col-4">
           <div class="card">
             <h3 class="card-title">Temps</h3>
-            <label for="checkbox">Checkbox:</label>
+            <a>Tout supprimer</a>
             <input type="checkbox" id="checkbox" />
             <a>autres temps</a>
             <h4>indicatif</h4>
-            <p class="toggle">présent</p>
+
             <p class="toggle">passé composé</p>
             <p class="toggle">imparfait</p>
             <p class="toggle">Futur</p>
@@ -66,16 +80,31 @@
             <p class="toggle">Plus-que-parfait</p>
             <p class="toggle">Passé composé</p>
             <h5>impératif</h5>
+            <a class="btn-next">plus de temps</a>
           </div>
         </div>
         <div class="col-4">
           <div class="card">
             <h3 class="card-title">Options</h3>
-            <div class="row">
-              <div class="col-6">charger défi</div>
-              <div class="col-6">sauvegarder défi</div>
-              <div class="col-6">code</div>
-            </div>
+            <label for="dropdown">nombre de questions</label>
+            <select id="dropdown">
+              <option value="1">5</option>
+              <option value="2">10</option>
+              <option value="3">20</option>
+              <option value="4">30</option>
+            </select>
+            <label for="switch">Type</label>
+            <input type="checkbox" id="switch" />
+            <span class="slider round"></span>
+            <br />
+            <label for="print">Options d'impression </label>
+            <input type="checkbox" id="print" />
+          </div>
+
+          <div class="row">
+            <div class="col-6">charger défi</div>
+            <div class="col-6">sauvegarder défi</div>
+            <div class="col-6">code</div>
           </div>
         </div>
       </div>
