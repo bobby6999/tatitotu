@@ -5,6 +5,12 @@
     <title>eikon parcel starter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -15,9 +21,11 @@
     <div class="container">
       <div class="row">
         <div class="col-2">
-          <button type="button">aide?</button>
+          <a class="button"><b>aide?</b></a>
         </div>
-        <div class="col-2 offset-8">bouton imprimer</div>
+        <div class="col-2 offset-8">
+          <a class="button"><b>Imprimer</b></a>
+        </div>
       </div>
     </div>
     <div class="container">
@@ -41,7 +49,7 @@
           <div class="dropdown">CIF(FLE)</div>
         </div>
         <div class="col-2">
-          <div class="dropdown">Pronominaux</div>
+          <div class="button"><b>Exercer</b></div>
         </div>
       </div>
     </div>
@@ -51,60 +59,81 @@
           <div class="card">
             <div class="card-body">
               <h3 class="card-title">Verbes</h3>
-              <p>5</p>
               <hr />
               <div class="button-list">
                 <!--bouttons -->
-                <a class="tag">verbe</a> <br />
-                <a class="tag">verbe</a> <br />
-                <a class="tag">verbe</a> <br />
-                <a class="tag">verbe</a> <br />
+                <a class="tag">verbe <img src="img/tag-x.png" /> </a><br />
+                <a class="tag">verbe <img src="img/tag-x.png" /></a> <br />
+                <a class="tag">verbe <img src="img/tag-x.png" /></a> <br />
+                <a class="tag">verbe <img src="img/tag-x.png" /></a> <br />
               </div>
             </div>
           </div>
         </div>
         <div class="col-4">
-          <div class="card">
+          <div class="card-body">
             <h3 class="card-title">Temps</h3>
-            <a>Tout supprimer</a>
+            <a class="white-text">Tout supprimer</a>
             <input type="checkbox" id="checkbox" />
-            <a>autres temps</a>
-            <h4>indicatif</h4>
-
-            <p class="toggle">passé composé</p>
-            <p class="toggle">imparfait</p>
-            <p class="toggle">Futur</p>
-            <p class="toggle">Futur antérieur</p>
-            <p class="toggle">Passé simple</p>
-            <p class="toggle">Passé antérieur</p>
-            <p class="toggle">Plus-que-parfait</p>
-            <p class="toggle">Passé composé</p>
-            <h5>impératif</h5>
-            <a class="btn-next">plus de temps</a>
+            <a class="white-text">autres temps</a>
+            <h4 class="subtitle">indicatif</h4>
+            <div class="temps">
+              <p class="toggle">passé composé</p>
+              <p class="toggle">imparfait</p>
+              <hr />
+              <p class="toggle">Futur</p>
+              <p class="toggle">Futur antérieur</p>
+              <hr />
+              <p class="toggle">Passé simple</p>
+              <p class="toggle">Passé antérieur</p>
+              <hr />
+              <p class="toggle">Plus-que-parfait</p>
+              <p class="toggle">Passé composé</p>
+              <hr />
+            </div>
+            <h4 class="subtitle">impératif</h4>
+            <a class="white-text">plus de temps</a>
           </div>
         </div>
         <div class="col-4">
-          <div class="card">
+          <div class="card-body">
             <h3 class="card-title">Options</h3>
-            <label for="dropdown">nombre de questions</label>
-            <select id="dropdown">
-              <option value="1">5</option>
-              <option value="2">10</option>
-              <option value="3">20</option>
-              <option value="4">30</option>
-            </select>
-            <label for="switch">Type</label>
-            <input type="checkbox" id="switch" />
-            <span class="slider round"></span>
-            <br />
-            <label for="print">Options d'impression </label>
-            <input type="checkbox" id="print" />
+            <div class="white-text">
+              <label for="dropdown">nombre de questions</label>
+              <select id="dropdown">
+                <option value="1">5</option>
+                <option value="2">10</option>
+                <option value="3">20</option>
+                <option value="4">30</option>
+              </select>
+              <label for="switch">Type</label>
+              <input type="checkbox" id="switch" />
+              <span class="slider round"></span>
+              <br />
+              <label class="switch">
+                <input type="checkbox" />
+                <div class="switch-wrapper">
+                  <div class="switch-inner"></div>
+                </div>
+                options d'impression
+              </label>
+              <!-- <label for="print">Options d'impression</label>
+              <input type="checkbox" id="print" /> -->
+            </div>
           </div>
 
           <div class="row">
-            <div class="col-6">charger défi</div>
-            <div class="col-6">sauvegarder défi</div>
-            <div class="col-6">code</div>
+            <div class="col-6">
+              <div class="button">charger défi</div>
+            </div>
+            <div class="col-6">
+              <div class="button">sauvegarder défi</div>
+            </div>
+            <div class="col-6">
+              <div class="inverse-button">
+                <div contenteditable="true">code à 8 caractères</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
