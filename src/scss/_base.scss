@@ -88,6 +88,7 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: #fff;
 }
 
 .subtitle {
@@ -133,3 +134,24 @@ input:checked + .switch-wrapper .switch-inner {
 .switch input {
   display: none;
 }
+
+body {
+  background: #333;
+}
+
+.sauvegarder {
+  margin-top: 178px;
+  margin-bottom: 25px;
+}
+
+.charger {
+  margin-top: 178px;
+}
+
+.code {
+  margin-top: 247px;
+}
+
+// .nav {
+//   margin-bottom: 65px;
+// }

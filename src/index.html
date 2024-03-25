@@ -28,31 +28,34 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-1">
-          <div class="dropdown">5H</div>
-        </div>
-        <div class="col-1">
-          <div class="dropdown">5P</div>
-        </div>
-        <div class="col-2">
-          <div class="dropdown">Par Groupe</div>
-        </div>
-        <div class="col-2">
-          <div class="dropdown">difficiles</div>
-        </div>
-        <div class="col-2">
-          <div class="dropdown">pronominaux</div>
-        </div>
-        <div class="col-2">
-          <div class="dropdown">CIF(FLE)</div>
-        </div>
-        <div class="col-2">
-          <div class="button"><b>Exercer</b></div>
+    <div class="nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <div class="dropdown">5H</div>
+          </div>
+          <div class="col-1">
+            <div class="dropdown">5P</div>
+          </div>
+          <div class="col-2">
+            <div class="dropdown">Par Groupe</div>
+          </div>
+          <div class="col-2">
+            <div class="dropdown">difficiles</div>
+          </div>
+          <div class="col-2">
+            <div class="dropdown">pronominaux</div>
+          </div>
+          <div class="col-2">
+            <div class="dropdown">CIF(FLE)</div>
+          </div>
+          <div class="col-2">
+            <div class="button"><b>Exercer</b></div>
+          </div>
         </div>
       </div>
     </div>
+
     <div class="container">
       <div class="row">
         <div class="col-4">
@@ -106,7 +109,23 @@
                 <option value="3">20</option>
                 <option value="4">30</option>
               </select>
-              <label for="switch">Type</label>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+                <span class="switch-label">On</span>
+              </label>
+              <div class="buttons">
+                <label>
+                  <input type="radio" name="type" />
+                  <div class="buttons-item">normal</div>
+                </label>
+                <label>
+                  <input type="radio" name="type" />
+                  <div class="buttons-item">inversé</div>
+                </label>
+              </div>
+
+              <!-- <label for="switch">Type</label>
               <input type="checkbox" id="switch" />
               <span class="slider round"></span>
               <br />
@@ -116,7 +135,7 @@
                   <div class="switch-inner"></div>
                 </div>
                 options d'impression
-              </label>
+              </label> -->
               <!-- <label for="print">Options d'impression</label>
               <input type="checkbox" id="print" /> -->
             </div>
@@ -124,13 +143,13 @@
 
           <div class="row">
             <div class="col-6">
-              <div class="button">charger défi</div>
+              <div class="button charger">charger défi</div>
             </div>
             <div class="col-6">
-              <div class="button">sauvegarder défi</div>
+              <div class="button sauvegarder">sauvegarder défi</div>
             </div>
             <div class="col-6">
-              <div class="inverse-button">
+              <div class="inverse-button code">
                 <div contenteditable="true">code à 8 caractères</div>
               </div>
             </div>

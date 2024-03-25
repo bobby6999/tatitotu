@@ -1,0 +1,19 @@
+.buttons {
+  input {
+    display: none;
+  }
+}
+
+.buttons-item {
+  border-radius: 5px;
+  padding: 8px;
+  background-color: #ffff;
+  color: #f4622f;
+}
+
+input:checked + .buttons-item {
+  border-radius: 5px;
+  padding: 8px;
+  background-color: #f4622f;
+  color: #ffff;
+}
