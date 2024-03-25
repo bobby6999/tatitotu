@@ -62,13 +62,24 @@
           <div class="card">
             <div class="card-body">
               <h3 class="card-title">Verbes</h3>
-              <hr />
+
               <div class="button-list">
                 <!--bouttons -->
-                <a class="tag">verbe <img src="img/tag-x.png" /> </a><br />
-                <a class="tag">verbe <img src="img/tag-x.png" /></a> <br />
-                <a class="tag">verbe <img src="img/tag-x.png" /></a> <br />
-                <a class="tag">verbe <img src="img/tag-x.png" /></a> <br />
+                <a class="tag"
+                  >avoir <img src="img/tag-x.png" class="cross" /> </a
+                ><br />
+                <a class="tag"
+                  >faire <img src="img/tag-x.png" class="cross"
+                /></a>
+                <br />
+                <a class="tag"
+                  >aller <img src="img/tag-x.png" class="cross"
+                /></a>
+                <br />
+                <a class="tag"
+                  >être <img src="img/tag-x.png" class="cross"
+                /></a>
+                <br />
               </div>
             </div>
           </div>
@@ -101,28 +112,35 @@
         <div class="col-4">
           <div class="card-body">
             <h3 class="card-title">Options</h3>
-            <div class="white-text">
-              <label for="dropdown">nombre de questions</label>
-              <select id="dropdown">
-                <option value="1">5</option>
-                <option value="2">10</option>
-                <option value="3">20</option>
-                <option value="4">30</option>
-              </select>
-              <label class="switch">
-                <input type="checkbox" />
-                <span class="slider"></span>
-                <span class="switch-label">On</span>
-              </label>
-              <div class="buttons">
-                <label>
-                  <input type="radio" name="type" />
-                  <div class="buttons-item">normal</div>
+
+            <div class="white-text option">
+              <div class="card-row">
+                <label for="dropdown">nombre de questions</label>
+                <select id="dropdown">
+                  <option value="1">5</option>
+                  <option value="2">10</option>
+                  <option value="3">20</option>
+                  <option value="4">30</option>
+                </select>
+              </div>
+              <div class="card-row">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                  <span class="switch-label">Options d'impression</span>
                 </label>
-                <label>
-                  <input type="radio" name="type" />
-                  <div class="buttons-item">inversé</div>
-                </label>
+              </div>
+              <div class="card-row">
+                <div class="buttons">
+                  <label>
+                    <input type="radio" name="type" />
+                    <div class="buttons-item">normal</div>
+                  </label>
+                  <label>
+                    <input type="radio" name="type" />
+                    <div class="buttons-item">inversé</div>
+                  </label>
+                </div>
               </div>
 
               <!-- <label for="switch">Type</label>
