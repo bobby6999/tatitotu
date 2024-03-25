@@ -1,10 +1,11 @@
 .dropdown {
   display: inline-flex;
   height: 45px;
-  padding: 3px 3px 3px 10px;
+  padding: 3px 60px 3px 10px;
   align-items: center;
   gap: 48px;
   flex-shrink: 0;
   border-radius: 5px;
-  background: var(--yellowish-green, #cbe860);
+  background: #cbe860;
+  margin-bottom: 67px;
 }
