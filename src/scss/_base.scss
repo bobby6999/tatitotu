@@ -104,6 +104,11 @@ h3 {
   font-weight: 600;
   line-height: normal;
 }
+.subtitle-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .white-text {
   color: #ffff;

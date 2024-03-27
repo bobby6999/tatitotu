@@ -87,20 +87,20 @@
         <div class="col-4">
           <div class="card-body">
             <h3 class="card-title">Temps</h3>
-            <a class="white-text">Tout supprimer</a>
-            <input type="checkbox" id="checkbox" />
-            <a class="white-text">autres temps</a>
+            <div class="subtitle-block">
+              <a class="white-text">Tout supprimer</a>
+              <input type="checkbox" id="checkbox" />
+              <a class="white-text">autres temps</a>
+            </div>
+
             <h4 class="subtitle">indicatif</h4>
             <div class="temps">
               <p class="toggle">passé composé</p>
               <p class="toggle">imparfait</p>
-              <hr />
               <p class="toggle">Futur</p>
               <p class="toggle">Futur antérieur</p>
-              <hr />
               <p class="toggle">Passé simple</p>
               <p class="toggle">Passé antérieur</p>
-              <hr />
               <p class="toggle">Plus-que-parfait</p>
               <p class="toggle">Passé composé</p>
               <hr />
@@ -127,7 +127,13 @@
                 <label class="switch">
                   <input type="checkbox" />
                   <span class="slider"></span>
-                  <span class="switch-label">Options d'impression</span>
+                  <span class="switch-label">
+                    <input type="checkbox" />
+                    <div class="switch-wrapper">
+                      <div class="switch-inner"></div>
+                    </div>
+                    Options d'impression
+                  </span>
                 </label>
               </div>
               <div class="card-row">
